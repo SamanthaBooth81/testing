@@ -35,4 +35,12 @@
     color: white;
     font-weight: bold;
     float: right;
+    margin: 10px;
+  }
+
+  .BlogButton:hover {
+    background: rgb(241 245 249);
+    text-decoration: underline;
+    border: #4018EF;
+    color: rgb(71 85 105);
   }
