@@ -562,28 +562,16 @@ video {
   margin: 2.5rem;
 }
 
-.mt-20 {
-  margin-top: 5rem;
-}
-
-.ml-10 {
-  margin-left: 2.5rem;
-}
-
-.mt-5 {
-  margin-top: 1.25rem;
+.mt-8 {
+  margin-top: 2rem;
 }
 
 .mt-2 {
   margin-top: 0.5rem;
 }
 
-.mb-2 {
-  margin-bottom: 0.5rem;
-}
-
-.mt-10 {
-  margin-top: 2.5rem;
+.mb-10 {
+  margin-bottom: 2.5rem;
 }
 
 .inline-block {
@@ -595,13 +583,8 @@ video {
        columns: 3;
 }
 
-.rounded {
-  border-radius: 0.25rem;
-}
-
-.bg-slate-50 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(248 250 252 / var(--tw-bg-opacity));
+.rounded-lg {
+  border-radius: 0.5rem;
 }
 
 .bg-slate-100 {
@@ -609,8 +592,12 @@ video {
   background-color: rgb(241 245 249 / var(--tw-bg-opacity));
 }
 
-.p-6 {
-  padding: 1.5rem;
+.p-14 {
+  padding: 3.5rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
 }
 
 .text-4xl {
@@ -635,11 +622,6 @@ video {
   color: rgb(75 85 99 / var(--tw-text-opacity));
 }
 
-.text-gray-500 {
-  --tw-text-opacity: 1;
-  color: rgb(107 114 128 / var(--tw-text-opacity));
-}
-
 .underline {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
@@ -649,10 +631,43 @@ video {
   text-underline-offset: 8px;
 }
 
-h1 {
+/* Header Styling */
+
+.StoriesHeader {
   background: -webkit-linear-gradient(left, #4018EF, #9C1AF0);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+/* 'New' tag for first post */
+
+.new.tag {
+  position: relative;
+}
+
+/* set the base styles for 'new' tag */
+
+.new.tag::before {
+  position: absolute;
+  display: block;
+  left: 80%;
+  color: white;
+  margin: 10px;
+  padding: 3px 4px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: smaller;
+  content: "New";
+  background: -webkit-linear-gradient(left, #4018EF, #9C1AF0);
+}
+
+/* Explore Blog Button styling */
+
+.BlogButton {
+  background: -webkit-linear-gradient(left, #4018EF, #9C1AF0);
+  color: white;
+  font-weight: bold;
+  float: right;
 }
 
 @media (min-width: 640px) {
